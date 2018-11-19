@@ -1,7 +1,7 @@
-id
+id SERIAL PRIMARY KEY
 user_id FOREIGN KEY
 rolename VARCHAR (could be leagueadmin, teamadmin, leaguesuperuser, god)
-control_id (could be leagueid, teamid) NULL
+control_id INTEGER (could be leagueid, teamid) NULL
 
 
 

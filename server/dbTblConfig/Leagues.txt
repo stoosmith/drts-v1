@@ -4,11 +4,13 @@ CREATE TABLE leagues
     ref VARCHAR NOT NULL UNIQUE,
     name VARCHAR NOT NULL,
     fixture_dow VARCHAR(10) NOT NULL,
-    logo VARCHAR NOT NULL,
+    logo VARCHAR,
     created TIMESTAMP DEFAULT NOW(),
-    createdby INTEGER REFERENCES users(id),
+    createdby INTEGER,
     modified TIMESTAMP DEFAULT NOW(),
-    modifiedby INTEGER REFERENCES users(id)
+    modifiedby INTEGER,
+    FOREIGN KEY (createdby) REFERENCES users (id),
+    FOREIGN KEY (modifiedby) REFERENCES users (id)
 );
 
 ///NOTES
