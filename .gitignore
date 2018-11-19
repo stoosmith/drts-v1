@@ -4,3 +4,6 @@
 /node_modules
 /client/node_modules
 
+#files
+Environment.txt
+GitCommands.txt
