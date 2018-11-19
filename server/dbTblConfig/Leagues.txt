@@ -1,0 +1,14 @@
+CREATE TABLE leagues
+(
+    id SERIAL PRIMARY KEY,
+    ref VARCHAR NOT NULL UNIQUE,
+    name VARCHAR NOT NULL,
+    fixture_dow VARCHAR(10) NOT NULL,
+    logo VARCHAR NOT NULL,
+    created TIMESTAMP DEFAULT NOW(),
+    createdby INTEGER REFERENCES users(id),
+    modified TIMESTAMP DEFAULT NOW(),
+    modifiedby INTEGER REFERENCES users(id)
+);
+
+///NOTES

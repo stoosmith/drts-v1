@@ -1,0 +1,8 @@
+id
+user_id FOREIGN KEY
+rolename VARCHAR (could be leagueadmin, teamadmin, leaguesuperuser, god)
+control_id (could be leagueid, teamid) NULL
+
+
+
+

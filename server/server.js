@@ -1,13 +1,14 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 
 const app = express();
 
 //assign middleware
 app.use(bodyParser.json());
-//app.use(cookieParser());
+app.use(cookieParser());
 
 
 
