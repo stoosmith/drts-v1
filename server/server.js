@@ -5,6 +5,12 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+//assign middleware
+app.use(bodyParser.json());
+//app.use(cookieParser());
+
+
+
 app.get('/', (req, res) => {
     res.send('this is working');
 })

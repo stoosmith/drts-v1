@@ -8,17 +8,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+            <h2>Home</h2>
+            <h3>Lgs</h3>
+            <input type='text' placeholder="search keyword" />
+            <p>Filtered List of current lgs</p>
+            <a className="App-link" href="http://localhost:3000/">Sign In</a>
+            <a className="App-link" href="http://localhost:3000/">Register</a>
         </header>
       </div>
     );
