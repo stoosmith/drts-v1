@@ -14,3 +14,4 @@ CREATE TABLE leagues
 );
 
 ///NOTES
+need to add an active flag!!! for god users to be able to de-activate.
